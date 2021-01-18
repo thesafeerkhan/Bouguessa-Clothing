@@ -46,7 +46,16 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
+  padding: 1rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.section-header {
   padding-left: 1rem;
 }
 
@@ -131,13 +140,13 @@ nav {
 }
 
 /* New Collections */
-.new-collect {
+.new-collection {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.new-collection {
+.collection {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -153,12 +162,68 @@ nav {
   line-height: 2;
 }
 
+/* Signature */
+.sig-divider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  color: white;
+  height: 300px;
+  margin: 0 1em;
+}
+
+.sig-divider img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.sig-divider .section-header {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.signature-collection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 3em 1em;
+}
+
+.sig-left {
+  flex: 1;
+  padding: 1em;
+}
+
+.sig-left a {
+  text-decoration: underline;
+}
+
+.sig-image {
+  max-width: 600px;
+}
+
+.sig-right {
+  flex: 1;
+  padding: 1em;
+}
 @media only screen and (max-width: 750px) {
-  .new-collection {
+  .collection {
     flex-direction: column;
   }
 
   .nav-list {
     display: none;
+  }
+
+  .signature-collection {
+    flex-direction: column;
   }
 }
