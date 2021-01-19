@@ -257,9 +257,11 @@ nav {
 /* Footer */
 footer {
   margin: 2em 1em 1em;
+  padding-top: 2em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: rgba(233, 233, 233, 0.233);
 }
 
 footer span {
