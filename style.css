@@ -121,9 +121,8 @@ nav {
   width: 500px;
 }
 
-.brand-logo {
-  height: 50%;
-  width: 50%;
+.nav-brand {
+  width: 150px;
 }
 
 .nav-cart {
@@ -264,6 +263,10 @@ footer {
   background-color: rgba(233, 233, 233, 0.233);
 }
 
+footer > * {
+  padding-top: 1em;
+}
+
 footer span {
   padding: 1em;
   font-weight: bold;
@@ -279,6 +282,7 @@ input[type="text"] {
   font-size: 1em;
   padding: 1em;
   margin-left: 1em;
+  margin-bottom: 2em;
 }
 
 /* Copyright */
@@ -288,6 +292,10 @@ input[type="text"] {
 }
 
 @media only screen and (max-width: 750px) {
+  .nav-cart {
+    display: none;
+  }
+
   .collection {
     padding: 0 2em;
   }
@@ -308,5 +316,10 @@ input[type="text"] {
 
   .signature-collection {
     flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
   }
 }
